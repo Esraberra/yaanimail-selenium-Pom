@@ -13,6 +13,18 @@ public class LoginClass {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+@FindBy (id = "_btn_create_account")
+    public WebElement hesapOlusturbutton;
+
+
+@FindBy(xpath = "//input[@placeholder='Ad Soyad']")
+    public WebElement kullaniciAdSoyadi;
+
+@FindBy (xpath = "//input[@placeholder='E-posta adresi']")
+    public WebElement mail;
+
+@FindBy (xpath = "//button[@type='submit']")
+    public WebElement kayitButton;
 
 
 
